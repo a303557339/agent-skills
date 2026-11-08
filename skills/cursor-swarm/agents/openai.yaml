@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cursor Swarm · 鼠标群"
+  short_description: "复用核心代码，为已有网页加入鼠标群、协作绘制与跟随动效，保留真实交互"
+  default_prompt: "用 $cursor-swarm 为当前页面加入鼠标群、多光标协作绘制和完工跟随效果，复用附带核心代码并验证原有交互。"

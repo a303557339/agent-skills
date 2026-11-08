@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f3">
+    <title>Cursor Swarm — a page, made together.</title>
+    <link rel="stylesheet" href="./demo.css">
+  </head>
+  <body>
+    <aside class="control-dock" aria-label="动效控制">
+      <div class="dock-status"><span class="status-dot" aria-hidden="true"></span><span id="phase">READY TO BUILD</span></div>
+      <span id="progress" class="dock-progress">0 / 0</span>
+      <button id="start" type="button">开始绘制 <span aria-hidden="true">↗</span></button>
+      <button id="replay" type="button">重播</button>
+      <button id="finish" type="button">直接完成</button>
+    </aside>
+
+    <div class="intro-note" id="intro-note">
+      <div class="intro-mark" aria-hidden="true">↖</div>
+      <p class="eyebrow">A LITTLE COLLECTIVE INTELLIGENCE</p>
+      <h1>Meet the swarm.</h1>
+      <p>移动鼠标，观察光标群。<br>向下滚动，或点击「开始绘制」。</p>
+      <span class="intro-scroll" aria-hidden="true">↓</span>
+    </div>
+
+    <main id="canvas">
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="Cursor Swarm 首页" data-swarm="text">swarm<span class="wordmark-dot">.</span></a>
+        <nav aria-label="页面导航">
+          <a href="#how" data-swarm="text">How it works</a>
+          <a href="#playground" data-swarm="text">Playground <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <section class="hero" id="top" aria-labelledby="hero-heading">
+        <div class="hero-overline">
+          <span class="eyebrow" data-swarm="text">CURSOR SWARM / AN INTERACTION STUDY</span>
+          <span class="issue" data-swarm="text">EST. 2026 · NO. 001</span>
+        </div>
+        <h2 id="hero-heading"><span data-swarm="text">Many cursors.</span><span class="second-line" data-swarm="text">One <em>canvas.</em></span></h2>
+        <div class="hero-bottom">
+          <p class="hero-description" data-swarm="text">A small swarm with a shared purpose.<br>They draw, type, and build the page.<br>Then they follow your lead.</p>
+          <a class="primary-link" href="#how" data-swarm="rect" data-swarm-id="hero-cta"><span data-swarm="text" data-swarm-after="hero-cta">See it come together <span aria-hidden="true">↘</span></span></a>
+        </div>
+        <div class="hero-rule"><span data-swarm="reveal"></span></div>
+        <div class="hero-footnote"><p data-swarm="text">REAL ELEMENTS. REAL INTERACTIONS.</p><p data-swarm="text">Scroll to keep building ↓</p></div>
+      </section>
+
+      <section class="process-section" id="how" aria-labelledby="how-heading">
+        <div class="section-heading">
+          <span class="eyebrow" data-swarm="text">01 / THE CHOREOGRAPHY</span>
+          <h2 id="how-heading" data-swarm="text">A little chaos.<br>A lot of coordination.</h2>
+        </div>
+        <div class="process-grid">
+          <article class="process-card" data-swarm="rect" data-swarm-id="gather-card">
+            <div class="card-topline"><span data-swarm="text" data-swarm-after="gather-card">01</span><span data-swarm="text" data-swarm-after="gather-card">GATHER</span></div>
+            <div class="card-art orbit-art" aria-hidden="true" data-swarm="reveal" data-swarm-after="gather-card">
+              <span class="orbit-ring"></span><span class="orbit-center">+</span>
+              <i style="--x:28%;--y:30%;--r:16deg;--c:#8261d9">↖</i><i style="--x:66%;--y:27%;--r:80deg;--c:#eb7857">↖</i><i style="--x:72%;--y:70%;--r:160deg;--c:#629c85">↖</i><i style="--x:27%;--y:75%;--r:240deg;--c:#617bda">↖</i>
+            </div>
+            <h3 data-swarm="text" data-swarm-after="gather-card">Find the rhythm.</h3>
+            <p data-swarm="text" data-swarm-after="gather-card">光标在画布上聚集、盘旋。每一个都有自己的速度，也有共同的方向。</p>
+          </article>
+          <article class="process-card" data-swarm="rect" data-swarm-id="build-card">
+            <div class="card-topline"><span data-swarm="text" data-swarm-after="build-card">02</span><span data-swarm="text" data-swarm-after="build-card">BUILD</span></div>
+            <div class="card-art build-art" aria-hidden="true" data-swarm="reveal" data-swarm-after="build-card">
+              <span class="mini-selection"><span>Hello, world<span class="mini-caret"></span></span><i></i><i></i><i></i><i></i></span>
+              <span class="dimension">184 × 56</span><span class="mini-pointer">↖</span>
+            </div>
+            <h3 data-swarm="text" data-swarm-after="build-card">Make it together.</h3>
+            <p data-swarm="text" data-swarm-after="build-card">分工打字、拉框、描线。多个光标同时工作，把页面一点点绘制出来。</p>
+          </article>
+          <article class="process-card" data-swarm="rect" data-swarm-id="follow-card">
+            <div class="card-topline"><span data-swarm="text" data-swarm-after="follow-card">03</span><span data-swarm="text" data-swarm-after="follow-card">FOLLOW</span></div>
+            <div class="card-art follow-art" aria-hidden="true" data-swarm="reveal" data-swarm-after="follow-card">
+              <svg viewBox="0 0 240 150"><path d="M18 115 C70 115 62 35 123 45 S173 95 217 45" fill="none" stroke="#d2ccdf" stroke-dasharray="3 5" stroke-width="1.5"/></svg>
+              <span style="left:23%;top:59%;color:#629c85;transform:rotate(45deg)">↖</span><span style="left:42%;top:32%;color:#8261d9;transform:rotate(75deg)">↖</span><span style="left:61%;top:47%;color:#eb7857;transform:rotate(60deg)">↖</span><span style="left:79%;top:23%;color:#222;transform:rotate(75deg)">↖</span>
+            </div>
+            <h3 data-swarm="text" data-swarm-after="follow-card">Follow your lead.</h3>
+            <p data-swarm="text" data-swarm-after="follow-card">完工之后重新成群。移动鼠标，看它们追赶、避让，再次找到平衡。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="diagram-section" aria-labelledby="diagram-heading">
+        <div class="diagram-copy">
+          <span class="eyebrow" data-swarm="text">02 / ONE SHARED DIRECTION</span>
+          <h2 id="diagram-heading" data-swarm="text">Independent minds.<br>Connected motion.</h2>
+          <p data-swarm="text">不是排队的鼠标拖尾。<br>吸引、环绕、邻居对齐与避让，<br>一起构成有生命感的群体运动。</p>
+        </div>
+        <div class="diagram" aria-label="三个任务节点连接到共享画布的示意图">
+          <svg class="connection-lines" viewBox="0 0 500 330" preserveAspectRatio="none" aria-hidden="true">
+            <path data-swarm="path" d="M90 78 C90 165 195 90 250 165" />
+            <path data-swarm="path" d="M410 78 C410 165 305 90 250 165" />
+            <path data-swarm="path" d="M250 265 L250 165" />
+            <path data-swarm="path" class="diagram-orbit" d="M343 165 A93 93 0 1 1 157 165 A93 93 0 1 1 343 165" />
+          </svg>
+          <span class="diagram-node node-a" data-swarm="rect" data-swarm-id="node-a"><span data-swarm="text" data-swarm-after="node-a">↖ DRAW</span></span>
+          <span class="diagram-node node-b" data-swarm="rect" data-swarm-id="node-b"><span data-swarm="text" data-swarm-after="node-b">↖ TYPE</span></span>
+          <span class="diagram-node node-c" data-swarm="rect" data-swarm-id="node-c"><span data-swarm="text" data-swarm-after="node-c">↖ ALIGN</span></span>
+          <span class="diagram-core" data-swarm="rect" data-swarm-id="node-core"><span data-swarm="text" data-swarm-after="node-core">✳</span></span>
+          <p class="diagram-caption" data-swarm="text">MANY AGENTS → ONE CANVAS</p>
+        </div>
+      </section>
+
+      <section class="playground" id="playground" aria-labelledby="playground-heading">
+        <span class="eyebrow" data-swarm="text">03 / STILL A REAL WEBSITE</span>
+        <div class="playground-content">
+          <div>
+            <h2 id="playground-heading" data-swarm="text">Built to be<br>played with.</h2>
+            <p data-swarm="text">光标只是访客。页面仍然属于你。<br>试试输入、点击，或重新播放整个过程。</p>
+          </div>
+          <form id="demo-form" class="demo-form">
+            <label for="demo-email" data-swarm="text">Leave a little hello.</label>
+            <div class="input-row" data-swarm="rect" data-swarm-id="form-row">
+              <input id="demo-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email" aria-describedby="form-note" data-swarm="reveal" data-swarm-after="form-row">
+              <button type="submit" aria-label="提交演示表单" data-swarm="rect" data-swarm-after="form-row">↗</button>
+            </div>
+            <p id="form-note" class="form-note" data-swarm="text">本地交互演示，不会发送或保存邮箱。</p>
+            <p id="form-status" class="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <a class="wordmark" href="#top" data-swarm="text">swarm.</a>
+        <p data-swarm="text">A page, made together.</p>
+        <a href="https://califa.github.io/swarm-site/" target="_blank" rel="noreferrer" data-swarm="text">Inspired by Swarm <span aria-hidden="true">↗</span></a>
+      </footer>
+    </main>
+
+    <script type="module">
+      import { createCursorSwarm } from '../assets/cursor-swarm.mjs';
+      const root = document.querySelector('main');
+      const swarm = createCursorSwarm({ root, count: 36, workers: 'auto', start: 'interaction', intro: true });
+      window.demoSwarm = swarm;
+      window.demoEvents = { submissions: 0 };
+      document.querySelector('#start').addEventListener('click', () => swarm.start());
+      document.querySelector('#replay').addEventListener('click', () => { swarm.replay(); });
+      document.querySelector('#finish').addEventListener('click', () => swarm.finish());
+      const phaseLabels = { intro: 'READY TO BUILD', building: 'BUILDING TOGETHER', following: 'FOLLOWING YOUR LEAD', complete: 'FOLLOWING YOUR LEAD', idle: 'READY', destroyed: 'PAUSED', reduced: 'REDUCED MOTION' };
+      function updateControls() {
+        const state = swarm.getState();
+        const phase = state.phase || 'intro';
+        document.querySelector('#phase').textContent = phaseLabels[phase] || phase.toUpperCase();
+        document.querySelector('#progress').textContent = `${state.done ?? 0} / ${state.total ?? 0}`;
+        document.querySelector('#intro-note').hidden = phase !== 'intro';
+        document.querySelector('#start').hidden = phase !== 'intro';
+        document.body.dataset.phase = phase;
+      }
+      updateControls();
+      setInterval(updateControls, 200);
+      document.querySelector('#demo-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        window.demoEvents.submissions += 1;
+        document.querySelector('#form-status').textContent = 'Hello received. 页面交互照常工作 ✓';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "cursor-swarm-skill",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/motion.test.mjs tests/choreography-motion.test.mjs",
+    "test:browser": "node tests/browser.test.mjs && node tests/integration.test.mjs && node tests/choreography.test.mjs"
+  },
+  "devDependencies": { "playwright": "1.62.1" }
+}
